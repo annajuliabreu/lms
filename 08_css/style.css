@@ -1,0 +1,71 @@
+/* estrutura e seletores */
+
+h1{
+    font-size: 60px;
+    color: blueviolet;
+    border-bottom: 0.5px solid grey;
+}
+
+p {
+    font-size: 36px;
+    color: blueviolet;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* box model */
+
+.box-aquamarine {
+    background-color: aquamarine;
+}
+
+.box-blue {
+    background-color:blue;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+#sessao-unica{
+    font-size: 36px;
+}
+
+/* propriedade display */
+
+* {
+    margin: 20;
+    padding: 20;
+    border: 20;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+.example {
+    color: #fff;
+}
+
+.example-item {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+.example-item_first {
+    background-color: pink;
+}
+
+.example-item_second {
+    background-color: green;
+}
+
+.example-item_third {
+    background-color: burlywood;
+}
