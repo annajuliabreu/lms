@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <!-- texto -->
+        Nome completo <br>
+        <input type="text" name="nome" value="Anna" readonly>
+        <br>
+
+        E-mail: <br>
+        <input type="email" name="email" disabled>
+        <br>
+
+        <!-- senha, esconder os caracteres -->
+        Senha: <br>
+        <input type="password" name="password" size="12" maxlength="8">
+        <br><br>
+
+        <!-- radio, que é selecionar uma opçao -->
+        Gênero: <br>
+        <input type="radio" name="gender" value="male"> Feminino <br>
+        <input type="radio" name="gender" value="female"> Masculino <br>
+        <input type="radio" name="gender" value="other"> Outro <br><br>
+
+        <!-- data -->
+        Data de nascimento <br>
+        <input type="date"> <br><br>
+
+        <!-- checkbox -->
+        Operadora: <br>
+        <input type="checkbox"> Oi<br>
+        <input type="checkbox"> Claro<br>
+        <input type="checkbox"> Tim<br>
+        <input type="checkbox"> Vivo<br><br>
+
+        <!-- number -->
+        Quantidade de pessoas na família: <br>
+        <input type="number" name="quantidade" min="1" max="10"><br>
+
+        <!-- botao de submeter -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
