@@ -7,23 +7,25 @@
     <title>Gramado & Canela</title>
 </head>
 <body>
-    <div>
+    <header>
         <h1>Gramado & Canela</h1>
         <p>Bem vindo ao blog Gramado & Canela!<br>
         Aqui você encontrará dicas e links úteis que ajudarão a criar uma melhor experiência de viagem a Gramado.</p>    
-    </div>
+    </header>
 
-    <h2>Gramado</h2>
-    <img src="./gramado.png" width="300" height="300" alt="Foto de Gramado">
+    <section>
+        <h2>Gramado</h2>
+        <img src="./gramado.png" width="300" height="300" alt="Foto de Gramado">
 
-    <p>Gramado é uma cidade com uma estância de montanha situada no estado mais a sul do Brasil, Rio Grande do Sul. Influenciada pelos colonos alemães do século XIX, a cidade possui um toque bávaro com chalés alpinos, chocolateiros e lojas de artesanato. Gramado é também conhecida pelas suas exibições de luzes de Natal e pelas hortênsias em flor na primavera. O Lago Negro disponibiliza alugueres de barcos e caminhadas na floresta, enquanto as montanhas da Serra Gaúcha possuem trilhos de caminhada e de alpinismo.</p>
+        <p>Gramado é uma cidade com uma estância de montanha situada no estado mais a sul do Brasil, Rio Grande do Sul. Influenciada pelos colonos alemães do século XIX, a cidade possui um toque bávaro com chalés alpinos, chocolateiros e lojas de artesanato. Gramado é também conhecida pelas suas exibições de luzes de Natal e pelas hortênsias em flor na primavera. O Lago Negro disponibiliza alugueres de barcos e caminhadas na floresta, enquanto as montanhas da Serra Gaúcha possuem trilhos de caminhada e de alpinismo.</p>
 
-    <h2>Canela</h2>
-    <img src="https://www.travelterapia.com.br/wp-content/uploads/2019/06/Canela-Igreja-MAtriz-CAPA.jpg" width="300" height="300" alt="Foto de Canela">
+        <h2>Canela</h2>
+        <img src="https://www.travelterapia.com.br/wp-content/uploads/2019/06/Canela-Igreja-MAtriz-CAPA.jpg" width="300" height="300" alt="Foto de Canela">
 
-    <p>Canela é uma cidade turística na Serra Gaúcha, em Rio Grande do Sul, o estado mais austral do Brasil. Com influências dos colonos alemães do século XIX, a cidade possui chalés de estilo bávaro e chocolateiros. É conhecida pelas exibições de luzes de Natal e pelas coloridas hortênsias em flor na primavera. A Catedral de Pedra, de estilo gótico, com 12 sinos de bronze, fica na frondosa praça principal da cidade, a Praça Matriz.</p>
-
-    <div>
+        <p>Canela é uma cidade turística na Serra Gaúcha, em Rio Grande do Sul, o estado mais austral do Brasil. Com influências dos colonos alemães do século XIX, a cidade possui chalés de estilo bávaro e chocolateiros. É conhecida pelas exibições de luzes de Natal e pelas coloridas hortênsias em flor na primavera. A Catedral de Pedra, de estilo gótico, com 12 sinos de bronze, fica na frondosa praça principal da cidade, a Praça Matriz.</p>
+    </section>
+    
+    <article>
         <h2>Lugares legais para conhecer em Gramado & Canela</h2>
 
         <ul>
@@ -52,9 +54,9 @@
             </li>
         </ul>
 
-    </div>
+    </article>
 
-    <div>
+    <article>
         <h2>Confira nossas indicações de restaurantes em Gramado e Canela no quadro comparativo a seguir:</h2>
         <table>
             <tr>
@@ -82,9 +84,36 @@
                 <td>Av. das Hortênsias, 804 - Gramado</td>
             </tr>
         </table>
-    </div>
+    </article>
 
-    <div>
+    <article>
+        <h2>Cadastra-se para receber novidades em primeira mão sobre Gramado e Canela!</h2>
+        <form action="">
+            Seu nome:<br>
+            <input type="text" name="nome" maxlength="15">
+            <br><br>
+
+            Ano que você pretende viajar:<br>
+            <input type="text" name="ano" value="2022" readonly>
+            <br><br>
+            
+            Média de valor que você tem para gastar na viagem:<br>
+            <input type="number" min="25000" max="30000">
+            <br><br>
+
+            Com quem você vai viajar?<br>
+            <input type="radio" name="compania" value="sozinho"> Sozinho<br>
+            <input type="radio" name="compania" value="familia"> Em família <br>
+            <input type="radio" name="compania" value="amigos"> Com os amigos<br>
+            <input type="radio" name="compania" value="casal"> Em casal<br><br>
+
+            Você já viajou para o sul do país?<br>
+            <input type="checkbox" name="campo-sim"> Sim<br>
+            <input type="checkbox" name="campo-nao"> Não<br>
+        </form>
+    </article>
+    
+    <footer>
         <h2>Acesse nossas redes sociais</h2>
         <ul>
             <li>
@@ -103,6 +132,6 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </footer>
 </body>
 </html>
