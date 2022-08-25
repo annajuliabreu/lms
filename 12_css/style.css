@@ -6,3 +6,27 @@ h1{
     font-size:48px;
     margin-left: 40px;
 }
+
+p{
+    color: white;
+    font: size 32px;
+    margin-left: 40px;
+}
+
+/* id */
+#inicio{
+    color: rgb(229, 182, 229);
+    font: size 32px;
+    margin-left: 40px;   
+}
+
+/* class */
+.slogan{
+    color: black;
+    margin-left: 40px; 
+}
+
+#exemplinho, .exemplo{
+    color: white
+}
+
