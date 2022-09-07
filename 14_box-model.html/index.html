@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            background-color: pink;
+            height: 200px;
+            width: 300px;
+            border-width: 20px 30px 40px 50px;
+            border-style: dashed ridge;
+            border-color: rgb(223, 111, 130);
+            margin-top: 50px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+        }
+        .b{
+            background-color: rgb(193, 192, 255);
+            height: 200px;
+            width: 300px;
+            border: 25px solid purple;
+            margin: 100px 150px 100px 80px;
+            padding: 50px;
+        }
+        .c{
+            background-color: rgb(26, 80, 26);
+            width: 400px;
+            height: 400px;
+        }
+        .d{
+            background-color: rgb(199, 235, 199);
+            width: 200px;
+            height: 400px;
+            /* centralização horizontal da div usando a margin auto */
+            margin: auto;
+        }
+        .e{
+            background-color: pink;
+            height: 200px;
+            width: 200px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .e .interno{
+            background-color: rgb(0, 0, 0);
+            height: 100px;
+            width: 100px;
+        }
+        .f{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- explorando as bordas e margens-->
+    <div class="a">
+    </div>
+
+    <div class="b">
+    </div>
+    
+    <!-- explorando a margem auto -->
+    <div class="c">
+        <div class="d">
+
+        </div>
+    </div>
+
+    <!-- explorando o padding -->
+    <div class="e">
+        BLACKBOX!
+        Is a black container with a flat base and sides, typically square or rectangular and having a lid.
+        <div class="interno">
+
+        </div>
+    </div>
+    <div class="f">
+
+    </div>
+</body>
+</html>
