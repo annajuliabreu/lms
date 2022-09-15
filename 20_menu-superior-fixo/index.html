@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .navegador{
+            display: flex;
+            background-color: palevioletred;
+            position: fixed;
+            top: 0;
+            left: 0;
+            /* vw- 1% da largura do viewport */
+            width: 100vw;
+        }
+        .navegador > .botao{
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .navegador > .botao:hover{
+            background-color: white;
+            color: palevioletred;
+        }
+        .container{
+            height: 2000px;
+            margin-top: 38px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navegador">
+        <a href="" class="botao">link 1</a>
+        <a href="" class="botao">link 2</a>
+        <a href="" class="botao">link 3</a>
+        <a href="" class="botao">link 4</a>
+    </nav>
+    <div class="container">
+        olá!<br>
+        tudo bem?<br>
+        :) <br>
+    </div>
+</body>
+</html>

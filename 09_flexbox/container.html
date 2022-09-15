@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container {
+        height: 800px;
+        border: 5px solid rgb(110, 133, 139);
+        display: flex;
+        /* quebra linha */
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+    }
+    .teste{
+        width: 200px;
+        height: 200px;
+        background-color: #ea50a1;
+        border: 2px solid black;
+    }
+    .diferente{
+        width: 100px;
+        height: 100px;
+    }
+    .externa{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        background-color: #ea50a1;
+        justify-content: center;
+        align-items: center;
+    }
+    .interna{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="container">
+        <!-- as divs sao os itens -->
+        <div class="teste">1</div>
+        <div class="teste">2</div>
+        <div class="teste diferente">3</div>
+        <div class="teste">4</div>
+        <div class="teste">5</div>
+        <div class="teste diferente">6</div>
+        <div class="teste">7</div>
+        <div class="teste">8</div>
+    </div>
+
+    <div class="externa">
+        <div class="interna">
+            
+        </div>
+    </div>
+</body>
+</html>

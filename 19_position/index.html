@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .tamanho-200-blue{
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+        }
+        .tamanho-200-orange{
+            background-color: rgb(214, 122, 61);
+            height: 200px;
+            width: 200px;
+        }
+        .exemplo-1{
+            border: 3px solid black;
+            height: 400px; 
+            width: 400px;
+            margin: auto;
+            position: relative;
+        }
+        .a{
+            /* valor padrão de position */
+            position: static;
+        }
+        .b{
+            /* valor padrão de position */
+            position: static;
+        }
+        .c{
+            position: relative;
+            top: 50px;
+            right: 30px;
+        }
+        .e{
+            /* podemos usar para criar um navegador fixo */
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        .g{
+            /* div por cima da outra */
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="exemplo-1">
+        <div class="a tamanho-200-blue">a</div>
+        <div class="b tamanho-200-orange">b</div>
+    </div>
+
+    <div class="exemplo-1">
+        <div class="c tamanho-200-blue">c</div>
+        <div class="d tamanho-200-orange">d</div>
+    </div>
+    <div class="exemplo-1">
+        <div class="e tamanho-200-blue">e</div>
+        <div class="f tamanho-200-orange">f</div>
+    </div>
+    <div class="exemplo-1">
+        <div class="g tamanho-200-blue">g</div>
+        <div class="h tamanho-200-orange">h</div>
+    </div>
+</body>
+</html>

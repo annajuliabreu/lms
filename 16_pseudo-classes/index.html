@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* link não visitado */
+        a:link{
+            color: red;
+        }
+        /* link já visitado */
+        a:visited{
+            color: green;
+        }
+        /* link quando o mouse passa por cima */
+        a:hover{
+            color: pink;
+        }
+        /* link no momento que é visitado */
+        a:active{
+            color: blue;
+        }
+
+        a{
+            font-size: 48px;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .site{
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            background-color: rgb(153, 202, 183);
+        }
+
+        .site:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.annajuliabreu.com" class="site">Anna Julia Abreu</a>
+</body>
+</html>

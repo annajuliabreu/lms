@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: flex;
+        }
+        .test{
+            height: 200px;
+            /* width: 200px; */
+            /* background-color:#ea50a1; */
+            /* border: 5px solid black; */
+            font-size: 50px;
+        }
+        .div1{
+            /* order: 1; */
+            /* tamanho no eixo principal */
+            flex-basis: 150px;
+            background-color:blueviolet;
+        }
+        .div2{
+            /* order: -1; */
+            flex-basis: 200px;
+            background-color: rgb(255, 225, 225);
+            flex-grow: 2;
+        }
+        .div3{
+            flex-basis: 150px;
+            background-color: #ea50a1;
+            /* distribue o espaço disponível do container */
+            flex-grow: 1;
+        }
+        .div4{
+            flex-basis: 300px;
+            background-color: rgb(125, 163, 53);
+            flex-shrink: 0;
+        }
+        .div5{
+            flex-basis: 400px;
+            background-color: rgb(95, 53, 163);
+            flex-shrink: 2;
+        }
+        .div6{
+            flex-basis: 500px;
+            background-color: rgb(163, 53, 77);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test div1">1</div>
+        <div class="test div2">2</div>
+        <!-- se eu não ordenar o item ele fica sendo 0 -->
+        <div class="test div3">3</div>
+        <!-- <div class="test div4">4</div> -->
+    </div>
+    <div class="container">
+        <div class="test div4">4</div>
+        <div class="test div5">5</div>
+        <div class="test div6">6</div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+    atalho
+
+    flex: flex-grow, flex-shrink, flex-basis
+
+    atv 4
+    
+    container
+        div             div{ div div}
+        flex-shrink 0   75% 25%
+
+ -->

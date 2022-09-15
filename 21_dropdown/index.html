@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown{
+            width: 120px;
+        }
+        .dropdown .dropdown-text{
+            background-color: pink;
+            width: 120px;
+            padding: 20px 0px;
+            text-align: center;
+            /* aparece a maozinha qnd fica em cima do botao */
+            cursor: pointer;
+        }
+        .dropdown .dropdown-content{
+            display: none;
+            background-color: rgb(233, 121, 139);
+            position: absolute;
+            height: 100px;
+            width: 200px;
+            padding: 20px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="dropdown-text">
+            Let's dropdown!
+        </div>
+        <div class="dropdown-content">
+            go one!
+        </div>
+        <div>
+            :)
+        </div>
+    </div>
+</body>
+</html>
