@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lateral{
+    height: 100%;
+    width: 400px;
+    background-color: rgb(237,118,146);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-lateral a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    color: #212120;
+}
+
+.menu-lateral a:hover{
+    color: #ff6d91;
+    background-color: #212120;
+}
+
+.conteudo{
+    height: 1920px;
+    margin-left: 400px;
+    color: #ff6d91;
+    background-color: #212120;
+    padding: 0px 10px;
+}
+
+#link{
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+    color:#e6e6e6;
+}
+
+h1, p, a{
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+}

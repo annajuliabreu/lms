@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* conteudo */
+
+.conteudo{
+    height: 1920px;
+    background-color: #0f0a6b;
+    padding: 25px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h1, h2, p{
+    font-family: 'Lato', sans-serif;
+    color: #deb7d7;
+    padding: 10px;
+}
+
+#info, #objetivos, #areas-atuacao, #areas-atuacao{
+    border: 1px solid #deb7d725;
+}
+
+/* navegador superior movel */
+
+.navegador{
+    display: flex;
+    background-color: #deb7d7;
+    cursor: pointer;
+}
+
+.navegador > .botao-navegador{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navegador > .botao-navegador:hover{
+    background-color: #0f0a6b;
+    color: #deb7d7;
+}
+
+/* menu dropdrown */
+
+.dropdown{
+    width: 160px;
+}
+
+.dropdown-button{
+    background-color: #deb7d7;
+    width: 145px;
+    text-align: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    color: rgb(15,10,107);
+    font-family: 'Lato', sans-serif;
+}
+
+.dropdown-content{
+    background-color: #deb7d7;
+    height: 100px;
+    width: 300px;
+    padding: 10px 0px;
+    text-align: center;
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover > .dropdown-content{
+    display: block;
+}
+
+.dropdown > .dropdown-button:hover{
+    background-color: #0f0a6b;
+    color: #deb7d7;   
+}
+
+.dropdown-content a{
+    display: block;
+    text-decoration: none;
+    color: #0f0a6b;
+    padding: 10px;
+}
+
+.dropdown-content a:hover{
+    background-color: #0f0a6b;
+    color: #deb7d7;
+}
