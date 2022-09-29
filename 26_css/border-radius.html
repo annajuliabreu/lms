@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .arrendondada{
+            background-color: #ea50a1;
+            width: 200px;
+            height: 200px;
+            /* arredondar as bordas */
+            border-radius: 25px;
+        } 
+
+        .circulo{
+            border-radius: 50%;
+        }
+
+        .galeria{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .galeria .card{
+            background-color: #ea50a1;
+            margin: 10px;
+            border-radius: 25px;
+        }
+        .card .image-card{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="arrendondada"></div>
+    <div class="arrendondada circulo"></div>
+    
+    <div class="galeria">
+        <div class="card"><img class="image-card" src="./cursor.png" alt=""></div>
+        <div class="card"><img class="image-card" src="./cursor.png" alt=""></div>
+        <div class="card"><img class="image-card" src="./cursor.png" alt=""></div>
+        <div class="card"><img class="image-card" src="./cursor.png" alt=""></div>
+        <div class="card"><img class="image-card" src="./cursor.png" alt=""></div>
+    </div>
+</body>
+</html>

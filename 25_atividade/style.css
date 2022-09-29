@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    color: #E9E9E9;
+
+}
+/* menu superior móvel */
+.navegador{
+    display: flex;
+    background-color: #3700B3;
+    color: #E9E9E9;
+    cursor: pointer;
+}
+
+.navegador > .botao-navegador{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navegador > .botao-navegador:hover{
+    background-color: #E9E9E9;
+    color: #3700B3;
+}
+
+/* galeria */
+.conteiner{
+    display: flex;
+}
+
+/* menu lateral esquerdo 300px */
+.menu-lateral-esquerdo{
+    background-color: #6200EE;
+    width: 300px;
+    height: 1200px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.menu-lateral-esquerdo a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.menu-lateral-esquerdo a:hover{
+    color: #6200EE;
+    background-color: #FFFFFF;
+}
+
+/* conteúdo - galeria 3:1 */
+.conteudo{
+    display: flex;
+    background-color: #FFFFFF;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.conteudo img{
+    margin: 15px;
+}
+
+/* menu lateral direito 3:1 */
+.menu-lateral-direito{
+    background-color: #009788;
+    height: 1200px;
+    flex-grow: 1;
+}
+
+.menu-lateral-direito a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.menu-lateral-direito a:hover{
+    color: #009788;
+    background-color: #FFFFFF;
+}
+
+h3, p{
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+/* rodape */
+.rodape{
+    display: flex;
+    height: 100px;
+    background-color: #3700B3;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}

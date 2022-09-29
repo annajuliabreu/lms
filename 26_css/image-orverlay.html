@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }   
+        .main{
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .overlay{
+            width: 200px; 
+            height: 200px;
+            background-color: #000000ab;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: none;
+            justify-content:center;
+            align-items: center;
+        }
+        .main:hover .overlay{
+            display:flex;
+        }
+        .main .overlay span{
+            color: #ffffff;
+            font-size: 25px;
+        }
+        .main .imagem{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- testee -->
+    <div class="main">
+        <img class="imagem" src="./cores.png" alt="">
+        <div class="overlay">
+            <span>Fantástico!</span>
+        </div>
+    </div>
+    <!-- qualidade... -->
+</body>
+</html>
