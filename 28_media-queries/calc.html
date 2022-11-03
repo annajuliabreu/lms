@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        nav.superior{
+            height: 40px;
+            background-color: #ea50a1;
+        }
+        .container{
+            display: flex;
+        }
+        nav.esquerda{
+            flex-basis: 300px;
+            flex-shrink: 0;
+            height: 400px;
+            background-color: #505fea;
+        }
+        div.conteudo{
+            overflow: hidden; /* todo conteudo que ultrapassa o elemento é escondido */
+            flex-basis: calc((100vw - 300px)/2);
+            flex-shrink: 0;
+            height: 400px;
+            background-color: #b4ea50;
+        }
+        nav.direita{
+            height: 400px;
+            flex-basis: calc((100vw - 300px)/2); /* o calc - faz uma operação*/
+            flex-shrink: 0; 
+            background-color: #cb50ea;
+        }
+
+        /* @media screen and (max-width: 768px){
+            .container{
+                flex-direction: column;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <nav class="superior"></nav>
+    <div class="container">
+        <nav class="esquerda"></nav>
+        <div class="conteudo">
+            <img src="./sk8.webp" alt="">
+        </div>
+        <nav class="direita"></nav>
+    </div>
+</body>
+</html>

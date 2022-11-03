@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .section{
+            width: 400px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .section .titulo{
+            background-color: #ea50a1;
+            padding: 10px;
+            color: white;
+        }
+
+        .section .conteudo{
+            background-color: #50ead6;
+            height: 200px;
+            display: none;
+
+            animation-name: aparecer;
+            animation-duration: 500ms;
+        }
+
+        .section .conteudo.active{
+            display: block;
+        }
+
+        @keyframes aparecer{
+            from {
+                height: 0px;
+            }
+            to {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="accordeon">
+        <div class="section">
+            <div class="titulo">titulo da sessao</div>
+            <div class="conteudo">lorem ipsum</div>
+        </div>
+
+        <div class="section">
+            <div class="titulo">titulo da sessao</div>
+            <div class="conteudo">lorem ipsum</div>
+        </div>
+    </div>
+    <script src="./accordeon-completo.js"></script>
+</body>
+</html>

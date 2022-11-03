@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navegador{
+    height: 40px;
+    background-color: #ea50a1;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.navegador a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.navegador a:hover{
+    background-color: #50b2ea;
+}
+
+.lateral-esquerdo{
+    height: 800px;
+    width: 350px;
+    flex-shrink: 0;
+    background-color: #50b2ea;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+.lateral-esquerdo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.lateral-esquerdo a:hover{
+    background-color: #ea50a1;
+}
+
+.main, .container1, .container2{
+    display: flex;
+}
+
+.container1 .celula1{
+    flex-basis: calc((100vw - 350px)/2);
+    flex-shrink: 0;
+    height: 400px;
+    background-color: #be50ea;
+}
+
+.main .container1 .celula2{
+    flex-basis: calc((100vw - 350px)/2);
+    flex-shrink: 0;
+    height: 400px;
+    background-color: #508eea;
+    display: flex;
+    justify-content: center;
+}
+
+.main .container1 .celula2 img{
+    width: 400px;
+    height: 400px;
+}
+
+.main .container1 .celula2 .overlay{
+    width: 545px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.418);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 380px;
+}
+
+.main .container1 .celula2 .overlay span{
+    color: rgb(255, 255, 255);
+}
+
+.main .container2 .celula3{
+    flex-basis: calc((100vw - 350px)/3);
+    flex-shrink: 0;
+    height: 400px;
+    background-color: #50eaaf;
+}
+
+.main .container2 .celula4{
+    flex-basis: calc((100vw - 350px)/3);
+    flex-shrink: 0;
+    height: 400px;
+    background-color: #e8ea50;
+}
+
+.main .container2 .celula5{
+    flex-basis: calc((100vw - 350px)/3);
+    flex-shrink: 0;
+    height: 400px;
+    background-color: #ea5050;
+}
+
+.accordeon{
+    width: 100%;
+    height: 100%;
+}
+
+.accordeon .section .titulo{
+    background-color: #be50ea;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.accordeon .section .conteudo{
+    height: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition: height 500ms;
+}
+
+.accordeon .section:hover .conteudo{
+    background-color: #eaac50;
+    height: 240px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.animacao{
+    width: 204px;
+    height: 153px;
+    position: absolute;
+    top: 0;
+
+    animation-name: rodar, voltinha;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rodar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes voltinha{
+    0%{
+        left: 0px; 
+        top: 0px;
+    }
+    25%{
+         left:1200px; 
+         top:0px;
+    }
+    50%{
+        left: 1200px; 
+        top: 700px;
+    }
+    75% {
+        left:0px; 
+        top:700px;
+    }
+    100% {
+        left:0px; 
+        top:0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        flex-direction: column;
+    }
+    .navegador{
+        box-shadow: none;
+        
+    }
+    .lateral-esquerdo{
+        height: 400px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .container1{
+        display: block;
+    }
+
+    .main .container1 .celula2 .overlay{
+        width: 574px;
+        top: 1180px;
+    }
+    
+    .container2{
+        display: block;
+    }
+
+    .container1 .celula1{
+        flex-shrink: 0;
+        height: 400px;
+    }
+    
+    .main .container1 .celula2{
+        flex-shrink: 0;
+        height: 400px;
+    }
+    
+    .main .container2 .celula3{
+        flex-shrink: 0;
+        height: 400px;
+    }
+    
+    .main .container2 .celula4{
+        flex-shrink: 0;
+        height: 400px;
+    }
+    
+    .main .container2 .celula5{
+        flex-shrink: 0;
+        height: 400px;
+    }
+
+
+@keyframes voltinha{
+    0%{
+        left: 0px; 
+        top: 0px;
+    }
+    25%{
+         left:300px; 
+         top:0px;
+    }
+    50%{
+        left: 1200px; 
+        top: 700px;
+    }
+    75% {
+        left:0px; 
+        top:700px;
+    }
+    100% {
+        left:0px; 
+        top:0px;
+    }
+}
+
+}

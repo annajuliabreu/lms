@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .menu-superior{
+            background-color: #ea50a1;
+            text-align: center;
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content:content;
+        }
+
+        /* dúvida em como centralizar os links no nav - display flex - OK */
+        
+        .menu-superior a{
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .menu-superior a:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .menu-lateral{
+            background-color: black;
+            color: #ea50a1;
+            width: 300px;
+            height: 1000px;
+
+            text-align: center;
+
+            position: fixed;
+            left: 0;
+        }
+
+        .menu-lateral .link{
+            color: #ea50a1;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .menu-lateral .link:hover{
+            background-color: #ea50a1;
+            color:aliceblue;
+        }
+
+        .conteudo{
+            margin-left: 300px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- menu superior móvel - usando a nav -->
+    <nav class="menu-superior">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">link 4</a>
+    </nav>
+
+    <div class="menu-lateral">
+        <div class="link">Link 1</div>
+        <div class="link">Link 2</div>
+        <div class="link">Link 3</div>
+        <div class="link">Link 4</div>
+    </div>
+
+    <div class="conteudo">
+        <h1>Olá, tudo bem?</h1>
+        <span>Dê uma olhada na nossa galeria de fotos logo abaixo!</span>
+    </div>
+</body>
+</html>

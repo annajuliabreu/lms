@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        .dropdown{
+            width: 150px;
+        }
+
+        .dropdown .texto-dropdown{
+            background-color: #ea50a1;
+            width: 150px;
+            padding: 15px 0px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .dropdown .conteudo-dropdown{
+            display: none;
+            position: absolute;
+            background-color: black;
+            color: whitesmoke;
+            height: 150px;
+            width: 150px;
+        }
+
+        /* o grande detalhe! */
+        .dropdown:hover .conteudo-dropdown{ 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="texto-dropdown">
+            Anna Julia Abreu
+        </div>
+        <div class="conteudo-dropdown">
+            Designer Digital
+        </div>
+    </div>
+    oooooii
+</body>
+</html>

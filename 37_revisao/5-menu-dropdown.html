@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .navegador{
+            background-color: #eac150;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navegador > .botao-navegador{
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            display:block;
+            padding: 10px;
+        }
+        .navegador > .botao-navegador:hover{
+            background-color: black;
+            color: white;
+        }
+
+        /* menu superior com dropdown em Projetos */
+        .dropdown .titulo-dropdown{
+            width: 50px;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .dropdown .conteudo-dropdown{
+            background-color: black;
+            color: white;
+            height: 114px;
+            width: 200px;
+            text-align: center;
+            position: absolute;
+            display: none;
+        }
+        .dropdown:hover > .conteudo-dropdown{
+            display: block;
+        }
+
+        .dropdown:hover{
+            background-color: black;
+            color: white;
+        }
+        .dropdown .conteudo-dropdown a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+        .dropdown .conteudo-dropdown a:hover{
+            background-color: #eac150;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navegador">
+        <a href="" class="botao-navegador">Quem somos</a>
+        <a href="" class="botao-navegador">Como doar</a>
+        <a href="" class="botao-navegador">Embaixadores</a>
+        <!-- <a href="" class="botao-navegador">Projetos</a> -->
+        <div class="dropdown">
+            <div class="titulo-dropdown">
+                Projetos
+            </div>
+            <div class="conteudo-dropdown">
+                <a href="">Dia Brincalhão</a>
+                <a href="">Pão da Vida</a>
+                <a href="">Sementes do Sertão</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

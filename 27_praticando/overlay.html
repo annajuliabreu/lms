@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* dou um display flex para o body */
+        body{
+            display: flex;
+        }
+        .overlay{
+            position: relative;
+        }
+        /* dou um tamnho para a img */
+        .overlay img{
+            width: 300px;
+        }
+        .overlay .overlay-inner{
+            /* ajusta o position */
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background-color: rgba(0, 0, 0, 0.479);
+            color: white;
+
+            /* ajusta altura e largura */
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+        }
+        .overlay .overlay-inner:hover{
+            opacity: 1;
+        }
+        .overlay .overlay-inner .overlay-text{
+            /* transforma texto de inline para block */
+            display: block;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- primeiro eu crio a div principal,
+    depois a img linkada e a div do texto do overlay -->
+    <div class="overlay">
+        <img src="./flower.png" alt="">
+        <div class="overlay-inner">
+            <span class="overlay-text">Roses and flowers</span>
+        </div>
+    </div>
+</body>
+</html>

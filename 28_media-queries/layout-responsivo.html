@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .principal{
+            display: flex;
+            background-color: #ea50a1;
+            justify-content: center;
+        }
+
+        .principal a, .secundario a{
+            color:#000000;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .principal a:hover{
+            background-color:#50eab7;
+        }
+
+        .secundario{
+            display: flex;
+            background-color:#50eab7;
+            justify-content: center;
+        }
+        .secundario a:hover{
+            background-color: #ea50a1;
+        }
+
+        @media screen and (min-width: 992px){
+            .secundario{
+                /* display: block; */
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 12px;
+
+                position: fixed;
+                top: 0;
+                left: 0;
+
+                width: 20vw;
+                height: 100vh;
+            }
+
+            .secundario a{
+                text-align: center;
+            }
+            .principal, .conteudo{
+                margin-left: 20vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="principal">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+    </nav>
+    <nav class="secundario">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+    </nav>
+    <div class="conteudo">
+        whatever!
+    </div>
+</body>
+</html>

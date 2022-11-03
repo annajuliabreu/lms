@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .accordeon{
+            width: 400px;
+            height: 400px;
+        }
+
+        .accordeon .section .titulo{
+            background-color: #ea50a1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .accordeon .section .conteudo{
+            height: 0px;
+            padding: 0px;
+            overflow: hidden;
+            transition: height 500ms, padding 500ms;
+        }
+
+        .accordeon .section:hover .conteudo{
+            background-color: #eaac50;
+            height: 90px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordeon">
+        <div class="section">
+            <div class="titulo">Titulo 1</div>
+            <div class="conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nisi dolore magnam repellendus recusandae dolores omnis odit quos, alias incidunt delectus, ea deleniti repellat dolorem cupiditate. Rerum omnis quo eum!</div>
+        </div>
+
+        <div class="section">
+            <div class="titulo">Titulo 2</div>
+            <div class="conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eum quaerat aliquid reiciendis officia nam non voluptate voluptatum rem recusandae, provident quo maxime? Ratione minima hic a dignissimos officia dolore?</div>
+        </div>
+
+        <div class="section">
+            <div class="titulo">Titulo 3</div>
+            <div class="conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vitae saepe natus ducimus minima necessitatibus fugit dignissimos soluta libero quos. Eos laboriosam voluptate ducimus voluptatum quam maiores itaque dicta repellat.</div>
+        </div>
+    </div>
+</body>
+</html>
