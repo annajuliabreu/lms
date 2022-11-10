@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .conteudo .box{
+            background-color: #ea50a1;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+        }
+        .conteudo .box:hover{
+            /* ----- transformacao */
+            /* translate - rotate - scale - skew  */
+            /* transform: scale(1.5, 1.5); */
+            /* transform: translate(120px,50%); */
+            /* transform: skew(30deg, 20deg); */
+            transform: scale(1.5, 1.5) rotate(0.5turn);
+            /* transform: scale(0.5) translate(-100%, -100%); */
+
+            /* ------ transicao */
+            transition: transform 500ms ease-in-out;
+
+            /* ----- animacao */
+            animation-name: mudar-cor;
+            animation-duration: 500ms;
+        }
+
+        @keyframes mudar-cor{
+            0%{
+                background-color: #ea50a1;
+            }
+            20%{
+                background-color: #9850ea;
+            }
+            40%{
+                background-color: #bcea50;
+            }
+            60%{
+                background-color: #ead350;
+            }
+            100%{
+                background-color: #ea50a1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

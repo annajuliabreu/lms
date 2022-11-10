@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-overlay{
+            background-color: #0000007c;
+            height: 100%;
+            width: 0;
+            overflow: hidden;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: width 500ms;
+        }
+        .menu-overlay.active{
+            width: 100%;
+        }
+        .menu-overlay .menu a{
+            text-decoration: none;
+            padding: 10px;
+            color: rgb(190, 190, 190);
+            cursor: pointer;
+            display: block;
+            font-size: 24px;
+            transition: color 500ms
+        }
+        .menu-overlay .menu a:hover{
+            color: white;
+        }
+        .menu-overlay .fechar{
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="abrir-modal">Click me</button>
+
+    <div class="menu-overlay">
+        <div class="menu">
+            <a href="" class="link">TV Shows</a>
+            <a href="" class="link">Playlists</a>
+            <a href="" class="link">Hobbies</a>
+        </div>
+        <div class="fechar">X</div>
+    </div>
+
+    <script src="./menu-burguer.js"></script>
+</body>
+</html>

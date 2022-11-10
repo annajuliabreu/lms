@@ -19,15 +19,23 @@
             left: 0;
             background-color: rgba(0, 0, 0, 0.5);
 
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
+
+            animation-name: aparecer;
+            animation-duration: 700ms;
+        }
+
+        .modal-overlay.active{
+            display: flex;
         }
 
         .modal-overlay .modal-container{
             width: 500px;
             height: 250px;
             background-color: white;
+            animation: descer 700ms;
         }
 
         .modal-overlay .modal-container .modal-header{
@@ -59,8 +67,22 @@
             background-color: #ea50a1;
         }
         
-        .modal-overlay.active{
-            display: flex;
+        @keyframes aparecer{
+            from{
+                opacity: 0;
+            }
+            to{ 
+                opacity: 1;
+            }
+        }
+
+        @keyframes descer{
+            from{
+                transform: translate(0, -300px);
+            }
+            to{
+                transform: translate(0,0);
+            }
         }
     </style>
 </head>

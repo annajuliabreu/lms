@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navegador{
+            background-color: #ea50a1;
+            position: fixed;
+            height: 100%;
+            width: 25%;
+        }
+        .navegador .botao-navegador{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            display: block;
+        }
+        .navegador .botao-navegador:hover{
+            background-color: black;
+            color: white;
+        }
+        .conteudo{
+            height: 1920px;
+            position: absolute;
+            right:0;
+            width: 75%;
+            background-color: #50ea8b;
+        }
+        .accordeon .titulo{
+            background-color: #ea8e50;
+            padding: 10px;
+        }
+        .accordeon .corpo{
+            background-color: #e0ea50;
+            padding: 0px;
+            height: 0px;
+            box-sizing: border-box;
+
+            overflow: hidden;
+            transition: height 500ms;
+        }
+        .accordeon:hover .corpo{
+            height: 350px
+        }
+        .corpo{
+            display: flex;
+        }
+        .corpo img{
+            width: 150px;
+        }
+        .corpo .corpo-img{
+            width: 50%;
+            background-color: #7e50ea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .corpo .corpo-texto{
+            width: 50%;
+            background-color: #50e0ea;
+            padding: 10px;
+            text-align: center;
+        }
+        @media screen and (max-width: 478px){
+            .navegador{
+                position: static;
+                height: 40px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .conteudo{
+                position: static;
+                width: 100%;                
+            }
+        }
+    </style>
+</head>
+<body>
+   <nav class="navegador">
+       <a href="" class="botao-navegador">HTML</a>
+       <a href="" class="botao-navegador">CSS</a>
+       <a href="" class="botao-navegador">JS</a>
+   </nav>
+
+   <div class="conteudo">
+       <div class="accordeon">
+            <div class="titulo">Assunto 1</div>
+            <div class="corpo">
+                <div class="corpo-img">
+                    <img src="./bulldog.jpg">
+                </div>
+                <div class="corpo-texto">
+                    lorem ipsum dolor sit amet, consectetur adipis lorem ipsum dolor sit lorem ipsum
+                </div>
+            </div>
+       </div>
+       <div class="accordeon">
+        <div class="titulo">Assunto 2</div>
+        <div class="corpo">
+            <div class="corpo-img">
+                <img src="./bulldog.jpg">
+            </div>
+            <div class="corpo-texto">
+                lorem ipsum dolor sit amet, consectetur adipis lorem ipsum dolor sit lorem ipsum
+            </div>
+        </div>
+   </div>
+   <div class="accordeon">
+    <div class="titulo">Assunto 3</div>
+    <div class="corpo">
+        <div class="corpo-img">
+            <img src="./bulldog.jpg">
+        </div>
+        <div class="corpo-texto">
+            lorem ipsum dolor sit amet, consectetur adipis lorem ipsum dolor sit lorem ipsum
+        </div>
+    </div>
+</div>
+   </div>
+</body>
+</html>

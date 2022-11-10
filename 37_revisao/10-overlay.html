@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .conteudo{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .conteudo img{
+            height: 320px;
+        }
+        .overlay-image{
+            position: relative;
+            margin: 10px;
+            transition: transform 500ms;
+        }
+        .overlay-image:hover{
+            transform: scale(1.5, 1.5);
+        }
+        .overlay-image .overlay{
+            color: white;
+            background-color: black;
+
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+            transition: opacity 500ms;
+        }
+        .overlay-image:hover .overlay{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="overlay-image">
+            <img src="https://i.pinimg.com/564x/6a/a4/bb/6aa4bbe364a5c0ae9f20aa8744b77314.jpg">
+            <div class="overlay">He Loves You!</div>
+        </div>
+        <div class="overlay-image">
+            <img src="https://i.pinimg.com/564x/6a/a4/bb/6aa4bbe364a5c0ae9f20aa8744b77314.jpg">
+            <div class="overlay">He Loves You!</div>
+        </div>
+        <div class="overlay-image">
+            <img src="https://i.pinimg.com/564x/6a/a4/bb/6aa4bbe364a5c0ae9f20aa8744b77314.jpg">
+            <div class="overlay">He Loves You!</div>
+        </div>
+        <div class="overlay-image">
+            <img src="https://i.pinimg.com/564x/6a/a4/bb/6aa4bbe364a5c0ae9f20aa8744b77314.jpg">
+            <div class="overlay">He Loves You!</div>
+        </div>
+        <div class="overlay-image">
+            <img src="https://i.pinimg.com/564x/6a/a4/bb/6aa4bbe364a5c0ae9f20aa8744b77314.jpg">
+            <div class="overlay">He Loves You!</div>
+        </div>
+        <div class="overlay-image">
+            <img src="https://i.pinimg.com/564x/6a/a4/bb/6aa4bbe364a5c0ae9f20aa8744b77314.jpg">
+            <div class="overlay">He Loves You!</div>
+        </div>
+    </div>
+</body>
+</html>
