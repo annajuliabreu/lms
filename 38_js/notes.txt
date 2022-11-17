@@ -1,0 +1,92 @@
+JavaScript - linguagem de programação padrão para páginas web,
+ele define o comportamento da páginas web.
+    - utilidades:
+        Mudar conteudo de elemento;
+        Mudar atributos HTML;
+        Mudar estilos CSS;
+        Esconder elementos HTML;
+        Mostrar elementos;
+        Adicionar elementos.
+
+o <script> é para ficar no final do código - 
+forma de facilitar o tempo de compilação/renderização do código.
+exerno:
+    <script src="./docs.js">
+
+DOM (Document Object Model) - define um padrão para acessar documentos
+HTML DOM - modelo padrão e interface de programação para HTML
+    - define: 
+        Elementos HTML como objetos;
+        As propriedades de elementos HTML;
+        Métodos para acessar elementos HTML;
+        Eventos para todos os elementos HTML.
+
+Recuperar elemnto HTML elementos HTML:
+    - por id: método getElementById();
+    let myElement = document.getElementById("intro");
+    obs: se o elemento não existir, o myElement será nulo.
+
+    - pelo nome da tag: método getElementsByTagName("p");
+    let x = document.getElementsByTagName("main")
+
+    - pela classe: document.getElementsByClassName();
+
+Recuperar elementos por seletor CSS:
+    método  querySelector() > retora o primeiro elemento que casar com o seletor, sem está dentro de uma lista
+            querySelectorAll() > retorna lista
+    let x = document.querySelectorAll("p.intro");
+    
+
+Manipulando HTML:
+Propriedade innerHTML: muda o conteudo HTML de um elemento html
+    metodo document.getByElementById("p1").innerHTML = "Hey!"
+
+Manipulando atributos HTML:
+    metodo document.querySelector(class).attribute = new value;
+    let foto = document.getElementsByTagName("myImage").src = "landscape.jpg"
+
+Manipulando CSS:
+    metodo document.querySelector(id).style.property = new style;
+    document.querySelector(".titulo").style.color = "blue";
+
+    - nomes das propriedades CSS compostos separados por hifen viram 
+    CamelCase no js:
+    Propriedade background-color > object.style.backgroundColor = "black";
+
+Manipulando Classes:
+    através API classList
+    - adicionando classe: el.classList.add('classOne', 'classTwo')
+    - removendo classe: el.classList.remove('classOne');
+    - verificar classe: if(el.classList.contains('classOne') == true){...}else{...}
+    - alternar classe: el.classList.toggle('classOne');
+
+
+Eventos HTML
+O código Js pode ser disparado a partir de eventos:
+    - quando um usuário clica o mouse;
+    - quando a página é recarregada;
+    - quando uma imagem é carregada;
+    - quando um mouse passa sobre um elemento;
+    - quando um campo de entrada muda;
+    - quando um formulário HTML é submetido;
+    - quando o usuário aperta uma tecla.
+
+são eles: 
+    - no clique: .onclick *
+    - no carregamento: .onload *
+    - mudança de estado: .onchange *
+    - quando o mouse se desloca sobre o elemento: .onmouseover
+    - quando o mouse se deloca para fora do elemento: .onmouseout
+    - quando o botão do mouse é pressionado: .onmousedown
+    - quando o botão do mouse é solto: .onmouseup
+    - quando a ação de clicar em um elemento é concluída: .onclick
+
+    *os mais usados
+
+HTML DOM EventListener
+é possível adicionar listeners de eventos: 
+    - método element.addEventListener(event, useCapture);
+    ex: element.addEventListener("click", function() {alert("Hello World!);});
+    obs. não usar o prefixo "on", use "click" no lugar de "onclick"
+é possivel remover listeners:
+    element.removeEventListener("mousemove", myFunction);

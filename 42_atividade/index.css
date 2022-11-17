@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.body{
+    background-color: #f8f9fa;
+}
+
+
+/* navegador */
+.navegador{
+    width: 100%;
+    height: 40px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 20px;
+    
+    position: fixed;
+    
+    display: flex;
+    align-items: center;
+}
+.navegador .header img{
+    height: 20px;
+}
+.navegador .header .button-post{
+    position: absolute;
+    right: 50px;
+    top: 2px;
+    
+    padding: 10px;
+    cursor: pointer;
+}
+.navegador .header button{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #f8f9fa2a;
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* menu retratil */
+.menu-retratil{
+    background-color: #f3f0f0;
+    position: fixed;
+    top:40px;
+    left:0;
+    
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    transition: width 600ms;
+}
+.menu-retratil.active{
+    height: 100vh;
+    width: 400px;
+}
+
+/* container, galeria, posts */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container .galeria{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.container .posts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* feed */
+.feed{
+    padding: 20px 40px 0px 40px;
+    margin-left: 0px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.feed.active{
+    margin-left: 400px;
+}
+.feed .publication{
+    position: relative;
+    top: 40px;
+    width: 800px;
+    height: 100px;
+    background-color: #f0ebeeb9;
+    margin-top: 40px;
+    padding: 8px;
+    border-radius: 30px;
+}
+.feed .publication .name{
+    color: rgb(0, 0, 0);
+    padding: 8px;
+}
+.feed .publication .content{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: solid rgb(202, 200, 200);
+    height: 25px;
+    border-radius: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* image slider */
+.slideshow{
+    /* o pulo do gato!!! */
+    position: absolute;
+    top: 50px;
+}
+.slideshow img{
+    display: none;
+}
+.slideshow img.active{
+    display: block;
+}
+.slideshow .seta-esquerda{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 9px 10px;
+    border-radius: 0px 12px 12px 0px;
+
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translate(0, -50%);
+    cursor: pointer;
+    user-select: none;
+}
+.slideshow .seta-direita{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 9px 10px;
+    border-radius: 12px 0px 0px 12px;
+
+
+    position: absolute;
+    right: 0px;
+    top: 50%; 
+    transform: translate(0, -50%);
+    cursor: pointer;
+    user-select: none;
+}
+.indicators{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 15px;
+}
+.indicators .indicator{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 30px;
+    height: 3px;
+}
+.indicators .indicator.active{
+    background-color: white;
+}
+
+/* modal */
+.overlay-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-modal.active{
+    display: flex;
+}
+    
+.overlay-modal .modal{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+}
+.overlay-modal .modal .modal-header{
+    height: 60px;
+    width: auto;
+    border-bottom: solid 2px #f8f9fa;
+}
+    
+.overlay-modal .modal .modal-header h2{
+    padding: 16px;
+}
+    
+.overlay-modal .modal .modal-content{
+    width: auto;
+    height: 180px;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.overlay-modal .modal .modal-content .input-name{
+    height: 20px;
+    width: 468px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    }
+    
+.overlay-modal .modal .modal-content .input-content{
+    height: 80px;
+    width: 468px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+    
+.overlay-modal .modal .modal-content .button{
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(91, 196, 143);
+    color: rgb(255, 255, 255);
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    margin-top: 16px;
+    cursor: pointer;
+}

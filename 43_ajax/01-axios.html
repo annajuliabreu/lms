@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline .card{
+            background-color: #ea50a1;
+            margin: 23px auto;
+            width: 500px;   
+        }
+
+        .timeline .card .title{
+            background-color: #fabede;
+            padding: 20px;
+            font-size: 26px;
+        }
+
+        .timeline .card .body{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="card">
+            <div class="title">Título!</div>
+            <div class="body">Lorem ipsum dolor sit amet, consectetur adip
+                lorem ipsum dolor sit amet lorem. Cum sociis natoque penatibus et
+                lorem ipsum dolor sit amet lorem. Cum sociis natoque penatibus et
+                lorem ipsum dolor sit amet lorem. Cum sociis natoque penatibus et
+                lorem ipsum dolor sit amet lorem. Cum sociis natoque penatibus et
+                lorem ipsum dolor sit amet lorem. Cum sociis natoque penatibus et
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        function creatPosts(posts){
+            for(let posts of posts){
+                let div_card = document.createElement("div");
+                div_card.classList.add("card");
+            }
+        }
+
+        let request = async function(){
+            try{
+                let response = await axios({
+                    method: 'GET',
+                    url:"https://jsonplaceholder.typicode.com/posts"
+                });
+                createPosts(response.data);
+
+                // for(let post of response.data){
+                //     console.log(post.title);
+                // }
+
+                // for(let i=0; i<response.data.length; i++){
+                //     console.log(response.data[i].title);
+                // }
+
+                // console.log(response.status);
+                // console.log(response.data);
+                // console.log(response);
+            }catch(e){
+                console.log(e);
+            }
+        }
+        request();
+    </script>
+</body>
+</html>

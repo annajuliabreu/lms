@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="navegador">
+        <div class="header">
+            <img src="./najubook.svg" alt="">
+            <div class="button-post"> Postar </div>
+            <div class="menu-hamburger">
+                <button class="botao-menu-hamburguer material-symbols-outlined" type="button">menu</button>
+            </div>
+        </div>
+
+        <div class="menu-lateral">
+            <div class="menu-retratil"></div>
+        </div>
+    </div>
+
+    
+
+    <div class="container">
+        <div class="posts">
+            <div class="feed"></div>
+        </div>
+
+        <div class="galeria">
+            <div class="slideshow">
+                <img class="active" src="https://loremflickr.com/600/300/dog?random=1" alt="">
+                <img src="https://loremflickr.com/600/300/dog?random=2" alt="">
+                <img src="https://loremflickr.com/600/300/dog?random=3" alt="">
+                <img src="https://loremflickr.com/600/300/dog?random=4" alt="">
+                <img src="https://loremflickr.com/600/300/dog?random=5" alt="">
+                <span class="seta-esquerda material-symbols-outlined"> arrow_back_ios </span>
+                <span class="seta-direita material-symbols-outlined"> arrow_forward_ios </span>
+                <div class="indicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Share a message to your friends</h2>
+            </div>
+            <div class="modal-content">
+                <form action="">
+                    Nickname <br><input class="input-name" type="text"><br>
+                    Message <br><input class="input-content" type="text">
+                    <input class="button" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

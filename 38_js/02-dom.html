@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div-principal"></div>
+    <div class="classe-da-div"></div>
+    <div class="classe-da-div">
+        <div class="div-interior">de dentro</div>
+    </div>
+    <div class="div-interior">de fora</div>
+
+    <script>
+        // getByElementById()
+        let div_principal = document.getElementById("div-principal");
+        console.log(div_principal);
+
+        // getByElementByTagName()
+        // imprimir todos das divs que tem o nome "div"
+        let divs = document.getElementsByTagName("div");
+        console.log(divs);
+        // manipular como se fosse uma lista
+        console.log(divs[0]);
+        console.log(divs[1]);
+
+        for(let i=0; i < divs.length; i++){
+            console.log(divs[i]);
+        }
+
+        // getByElementByClassName()
+        // pegar todas as divs que tem a classe "classe-da-div"
+        let divs_classe = document.getElementsByClassName("classe-da-div");
+        console.log(divs_classe);
+
+        // querySelectiorAll()
+        let divs_classe1 = document.querySelectorAll(".classe-da-div");
+        console.log(divs_classe1);
+
+        let div_dentro = document.querySelector(".classe-da-div .div-interior");
+        console.log(div_dentro);
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .galeria{
+            display: flex;
+            justify-content: space-around;
+        }
+        .card{
+            width: 400px;
+            background-color: #ea50a1;
+            margin: 20px;
+        }
+        .card .titulo{
+            background-color: #f1a3cd;
+            padding: 16px;
+            font-size: 24px;
+        }
+        .card .corpo{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="galeria">
+        <div class="card">
+            <div class="titulo">
+                Lista de compras
+            </div>
+            <div class="corpo">
+                Banana, ovo, frango
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="titulo">
+                Lista de exercicios
+            </div>
+            <div class="corpo">
+                Corda, pulo, corrida, pilates
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        let galeria = document.querySelector(".galeria");
+
+        function criarCards(todos){
+            for(let todo of todos){
+                let div_card = document.createElement("div");
+                div_card.className = "card";
+
+                let div_titulo = document.createElement("div");
+                div_titulo.className = "titulo";
+
+                let texto_titulo = document.createTextNode(todo.titulo);
+                div_titulo.appendChild(texto_titulo);
+                div_card.appendChild(div_titulo);
+
+                let div_body = document.createElement("div");
+                div_body = className = "corpo";
+                let text_body = document.createTextNode(todo.corpo);
+                div_body.appendChild(text_body);
+                div_card.appendChild(div_body);
+
+                galeria.appendChild(div_card);
+            }
+        }
+
+        async function request(){
+            try{
+                let response = await axios({
+                    method: "GET",
+                    url: "https://62cc3547a080052930a7709b.mockapi.io/todo"
+            });
+            criarCards(response.data);
+            // console.log(response);
+            // for(let todo of response.data){
+            //     console.log(todo.titulo);
+            //     console.log(todo.corpo);
+            // }
+        }catch(e){
+                console.log(e);
+            }
+        }
+        request();
+    </script>
+</body>
+</html>

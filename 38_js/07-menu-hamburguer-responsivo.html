@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navegador{
+            background-color: #f8f9fa;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .navegador .header{
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+        .navegador .header button{
+            margin-left: auto;
+            padding: 9px 20px;
+            /* outline: none; */
+            font-size: large;
+            background-color: #e6e9ec;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .navegador .menu-retratil{
+            height: 0px;
+            overflow: hidden;
+            transition: height 600ms;
+            /* o pulo do gato!!! menu sobreposto */
+            position: absolute;
+            background-color: #e6e9ec;
+            width: 100%;
+        }
+        /* o pulo do gato!!! classe active */ 
+        /* auto - não é um tamnho animável */
+        .navegador .menu-retratil.active{
+            height: 192px;
+        }
+        .navegador .menu-retratil a, nav.menu-esquerdo a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+            overflow: hidden;
+        }
+        .navegador .menu-retratil a:hover, nav.menu-esquerdo a:hover{
+            color: rgb(94, 93, 93);
+            background-color: rgba(137, 43, 226, 0.151);
+        }
+        /* o pulo do gato!!! */
+        nav.menu-esquerdo{
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            .navegador .header button{
+                display: none;
+            }
+            .navegador .menu-retratil{
+                display: none;
+            }
+            nav.menu-esquerdo{
+                display: block;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                height: calc(100vh - 52px);
+                width: 30%;
+                background-color: #e6e9ec;
+            }
+            .container{
+                margin-left: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navegador">
+        <div class="header">
+            <h3>Titulo</h3>
+            <button> &#9776</button>
+        </div>
+        <!-- usar o js para adicionar a classe active no 
+        menu retratil quando clicar no botao! linha 75-77-->
+        <div class="menu-retratil">
+            <a href="">link 1</a>
+            <a href="">link 2</a>
+            <a href="">link 3</a>
+            <a href="">link 4</a>
+        </div>
+    </nav>
+    <nav class="menu-esquerdo">
+        <a href="">link 1</a>
+        <a href="">link 2</a>
+        <a href="">link 3</a>
+        <a href="">link 4</a>
+    </nav>
+    <div class="container">
+        <!-- <img src="https://loremflickr.com/320/1000/bts" alt=""> -->
+    </div>
+    <script>
+        let button = document.querySelector(".navegador .header button");
+        let menu_retratil = document.querySelector(".navegador .menu-retratil");
+        
+        button.addEventListener("click", function(){
+            menu_retratil.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
